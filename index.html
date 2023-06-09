@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HexPet</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page-body">
+    <main class="page-main">
+        <section class="account">
+            <h2 class="visually-hidden">Account</h2>
+            <section class="user">
+                <h3 class="visually-hidden">About user</h3>
+                <div class="user__name">
+                    <p class="user__caption">User:</p>
+                    <p class="user__text">Alexandr Tyurin</p>
+                </div>
+                <div class="user__pet-name">
+                    <p class="user__caption">Pet:</p>
+                    <p class="user__text">Sharik</p>
+                </div>
+                <div class="user__time">
+                    <p class="user__caption">Time per day:</p>
+                    <p class="user__text">1 hour 36 minutes</p>
+                </div>
+            </section>
+            <section class="pet">
+                <h3 class="visually-hidden">About pet</h3>
+                <span class="pet__food">10</span>
+                <span class="pet__health"></span>
+                <img src="#" alt="pet's avatar" class="pet__avatar">
+                <button type="button" class="btn btn_bg-grey pet__feed-button">Full</button>
+            </section>
+            <button type="button" class="btn btn_bg-yellow account__btn-logout">Log Out</button>
+            <button type="button" class="btn btn_bg-yellow account__btn-settings">Settings</button>
+        </section>
+        <div class="timer-page">
+            <div class="logo timer-page__logo">
+                <img src="#" alt="logo of Hexpet" class="logo__image">
+            </div>
+            <section class="timer">
+                <h3 class="timer__title">Timer</h3>
+                <button type="button" class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_focus">Focus</button>
+                <button type="button" class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_short-break">Short
+                    Break</button>
+                <button type="button" class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_long-break">Long
+                    Break</button>
+                <div class="timer__time-view">25:00</div>
+                <ul class="timer__list">
+                    <li class="timer__item">Project: Project 1</li>
+                    <li class="timer__item">Task: Task 1</li>
+                    <li class="timer__item">Sessions 4/4</li>
+                </ul>
+                <button type="button" class="btn btn_bg-cyan timer__start-btn">Start</button>
+            </section>
+        </div>
+        <section class="task-manager">
+            <h2 class="visually-hidden">Task manager</h2>
+            <section class="projects">
+                <h3 class="projects__title">Projects</h3>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <button type="button" class="projects__remove-btn">
+                            <span class="visually-hidden">Remove project</span>
+                        </button>
+                        <span class="projects__text">Project 1</span>
+                        <button type="button" class="projects__done-btn">
+                            <span class="visually-hidden">Project is done</span>
+                        </button>
+                    </li>
+                    <li class="projects__item">
+                        <button type="button" class="projects__remove-btn">
+                            <span class="visually-hidden">Remove project</span>
+                        </button>
+                        <span class="projects__text">Project 2</span>
+                        <button type="button" class="projects__done-btn">
+                            <span class="visually-hidden">Project is done</span>
+                        </button>
+                    </li>
+                    <li class="projects__item">
+                        <button type="button" class="projects__remove-btn">
+                            <span class="visually-hidden">Remove project</span>
+                        </button>
+                        <span class="projects__text">Project 3</span>
+                        <button type="button" class="projects__done-btn">
+                            <span class="visually-hidden">Project is done</span>
+                        </button>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn_bg-yellow projects__add-btn">Add project</button>
+            </section>
+            <section class="tasks">
+                <h3 class="tasks__title">Tasks</h3>
+                <ul class="tasks__list">
+                    <li class="tasks__item">
+                        <button type="button" class="tasks__remove-btn">
+                            <span class="visually-hidden">Remove task</span>
+                        </button>
+                        <span class="tasks__text">Task 1</span>
+                        <button type="button" class="tasks__done-btn">
+                            <span class="visually-hidden">Task is done</span>
+                        </button>
+                    </li>
+                    <li class="tasks__item">
+                        <button type="button" class="projects__remove-btn">
+                            <span class="visually-hidden">Remove project</span>
+                        </button>
+                        <span class="projects__text">Project 2</span>
+                        <button type="button" class="projects__done-btn">
+                            <span class="visually-hidden">Project is done</span>
+                        </button>
+                    </li>
+                    <li class="tasks__item">
+                        <button type="button" class="tasks__remove-btn">
+                            <span class="visually-hidden">Remove task</span>
+                        </button>
+                        <span class="tasks__text">Task 3</span>
+                        <button type="button" class="tasks__done-btn">
+                            <span class="visually-hidden">Task is done</span>
+                        </button>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn_bg-yellow tasks__add-btn">Add task</button>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
