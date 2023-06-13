@@ -49,10 +49,10 @@
                 <button type="button" class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_long-break">Long
                     Break</button>
                 <div class="timer__time-view">25:00</div>
-                <ul class="timer__list">
+                <ul class="timer__indicators">
                     <li class="timer__item">Project: Project 1</li>
-                    <li class="timer__item">Task: Task 1</li>
-                    <li class="timer__item">Sessions 4/4</li>
+                    <li class="timer__item">Task: Task 2</li>
+                    <li class="timer__item">Sessions 3/4</li>
                 </ul>
                 <button type="button" class="btn btn_bg-cyan timer__start-btn">Start</button>
             </section>
@@ -62,7 +62,7 @@
             <section class="projects">
                 <h3 class="projects__title">Projects</h3>
                 <ul class="projects__list">
-                    <li class="projects__item">
+                    <li class="projects__item projects__item_selected">
                         <button type="button" class="projects__remove-btn">
                             <span class="visually-hidden">Remove project</span>
                         </button>
@@ -90,7 +90,8 @@
                         </button>
                     </li>
                 </ul>
-                <button type="button" class="btn btn_bg-yellow projects__add-btn">Add project</button>
+                <button type="button" class="btn btn_bg-yellow projects__edit-btn">Edit</button>
+                <button type="button" class="btn btn_bg-yellow projects__add-btn">Add</button>
             </section>
             <section class="tasks">
                 <h3 class="tasks__title">Tasks</h3>
@@ -105,11 +106,11 @@
                         </button>
                     </li>
                     <li class="tasks__item">
-                        <button type="button" class="projects__remove-btn">
+                        <button type="button" class="tasks__remove-btn">
                             <span class="visually-hidden">Remove project</span>
                         </button>
-                        <span class="projects__text">Project 2</span>
-                        <button type="button" class="projects__done-btn">
+                        <span class="tasks__text">Task 2</span>
+                        <button type="button" class="tasks__done-btn">
                             <span class="visually-hidden">Project is done</span>
                         </button>
                     </li>
@@ -123,7 +124,8 @@
                         </button>
                     </li>
                 </ul>
-                <button type="button" class="btn btn_bg-yellow tasks__add-btn">Add task</button>
+                <button type="button" class="btn btn_bg-yellow tasks__edit-btn">Edit</button>
+                <button type="button" class="btn btn_bg-yellow tasks__add-btn">Add</button>
             </section>
         </section>
     </main>
