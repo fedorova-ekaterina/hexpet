@@ -1,4 +1,11 @@
 @import '../fonts/fonts.css';
+@import './base.css';
+@import './btn.css';
+@import './visually-hidden.css';
+@import './account.css';
+@import './user.css';
+@import './pet.css';
+@import './timer.css';
 
 :root {
     --black: #000000;
@@ -14,7 +21,3 @@
     --cyan:#91fac2;
 }
 
-
-* {
-    font-family: 'JetBrains Mono', monospace;
-}

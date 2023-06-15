@@ -1,0 +1,34 @@
+.timer {
+    background-color: var(--pink );
+}
+
+.timer__block {
+    background-color: var(--white-2);
+    border-radius: 30px;
+}
+
+.timer__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.timer__time-view {
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+}
+
+.timer__item {
+    color: var(--grey-1);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.timer__start-btn {
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
