@@ -6,6 +6,8 @@
 @import './user.css';
 @import './pet.css';
 @import './timer.css';
+@import './projects.css';
+@import './tasks.css';
 
 :root {
     --black: #000000;

@@ -1,0 +1,26 @@
+.projects__title,
+.projects__btn {
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+}
+
+.projects__item {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+}
+
+.projects__item_selected {
+    background-color: var(--pink);
+}
+
+.projects__remove-btn {
+    background-color: transparent;
+    background-image: url('../images/remove-icon.png');
+    width: 46px;
+    height: 46px;
+    border: none;
+}
