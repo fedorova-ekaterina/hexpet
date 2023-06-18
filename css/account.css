@@ -5,6 +5,7 @@
 .account__btn {
     font-size: 40px;
     line-height: 53px;
+    min-width: 259px;
 }
 
 .account__buttons {
