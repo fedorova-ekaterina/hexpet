@@ -1,16 +1,47 @@
+.projects__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
 .projects__title,
 .projects__btn {
     font-size: 40px;
+    font-weight: 400;
     line-height: 53px;
     text-align: center;
 }
 
+.projects__title {
+    position: relative;
+    margin-bottom: 57px;
+}
+
+.projects__title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/icon-checked.png") ;
+}
+
+.projects__list {
+    margin-bottom: 10px;
+}
+
 .projects__item {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    border: 1px solid var(--black);
+    border-radius: 20px;
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    border: 1px solid var(--black);
-    border-radius: 20px;
 }
 
 .projects__item_selected {
@@ -20,6 +51,14 @@
 .projects__remove-btn {
     background-color: transparent;
     background-image: url('../images/remove-icon.png');
+    width: 46px;
+    height: 46px;
+    border: none;
+}
+
+.projects__done-btn {
+    background-color: transparent;
+    background-image: url('../images/done-icon.png');
     width: 46px;
     height: 46px;
     border: none;

@@ -1,23 +1,57 @@
 .timer {
     background-color: var(--pink );
+    border: 3px solid var(--black);
+    border-radius: 40px;
+    padding: 32px 50px;
+}
+
+.timer-page__logo {
+    display: flex;
+    margin-bottom: 85px;
 }
 
 .timer__block {
     background-color: var(--white-2);
     border-radius: 30px;
+    padding: 35px;
+}
+
+.timer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
 }
 
 .timer__title {
     text-transform: uppercase;
-    font-size: 30px;
-    line-height: 58px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 53px;
     text-align: center;
+}
+
+.timer__buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.timer__preset-btn {
+    flex-basis: 115px;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 .timer__time-view {
     font-size: 64px;
     line-height: 84px;
     text-align: center;
+    margin-bottom: 30px;
+}
+
+.timer__indicators {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .timer__item {
@@ -31,9 +65,5 @@
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
-}
-
-.timer__preset-btn {
-    font-size: 24px;
-    line-height: 32px;
+    border: 2px solid var(--black);
 }

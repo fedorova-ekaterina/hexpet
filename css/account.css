@@ -1,4 +1,13 @@
+.account__pet {
+    margin-bottom: 35px;
+}
+
 .account__btn {
     font-size: 40px;
     line-height: 53px;
+}
+
+.account__buttons {
+    display: flex;
+    justify-content: space-between;
 }

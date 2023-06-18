@@ -9,126 +9,158 @@
 </head>
 
 <body class="page-body">
-    <main class="page-main">
-        <section class="account">
-            <h2 class="visually-hidden">Account</h2>
-            <section class="user">
-                <h3 class="visually-hidden">About user</h3>
-                <div class="user__name">
-                    <p class="user__caption">User:</p>
-                    <p class="user__text">Alexandr Tyurin</p>
+    <div class="container">
+        <main class="page-main">
+            <div class="page-main__container">
+                <section class="account">
+                    <div class="account__container">
+                        <h2 class="visually-hidden">Account</h2>
+                        <section class="user">
+                            <div class="user__container">
+                                <h3 class="visually-hidden">About user</h3>
+                                <div class="user__name">
+                                    <p class="user__caption">User:</p>
+                                    <p class="user__text">Alexandr Tyurin</p>
+                                </div>
+                                <div class="user__pet-name">
+                                    <p class="user__caption">Pet:</p>
+                                    <p class="user__text">Sharik</p>
+                                </div>
+                                <div class="user__time">
+                                    <p class="user__caption">Time per day:</p>
+                                    <p class="user__text">1 hour 36 minutes</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="pet account__pet">
+                            <div class="pet__container">
+                                <h3 class="visually-hidden">About pet</h3>
+                                <span class="pet__food">10</span>
+                                <!--<span class="pet__health"></span>-->
+                                <div class="pet__img-block">
+                                    <img src="images/pet.png" alt="pet's avatar" width="261" height="193"
+                                        class="pet__avatar">
+                                </div>
+                                <button type="button" class="btn btn_bg-grey pet__feed-button">Full</button>
+                            </div>
+                        </section>
+                        <div class="account__buttons">
+                            <button type="button" class="btn btn_bg-yellow account__btn">Log Out</button>
+                            <button type="button" class="btn btn_bg-yellow account__btn">Settings</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="timer-page">
+                    <div class="timer-page__container">
+                        <div class="logo timer-page__logo">
+                            <img src="images/logo.png" alt="logo of Hexpet" class="logo__image">
+                            <img src="images/logo-text.png" alt="logo of Hexpet" class="logo__text">
+                        </div>
+                        <section class="timer">
+                            <div class="timer__container">
+                                <h3 class="timer__title">Timer</h3>
+                                <div class="timer__buttons">
+                                    <button type="button"
+                                        class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_focus">Focus</button>
+                                    <button type="button"
+                                        class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_short-break">Short
+                                        Break</button>
+                                    <button type="button"
+                                        class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_long-break">Long
+                                        Break</button>
+                                </div>
+                                <div class="timer__block">
+                                    <div class="timer__time-view">25:00</div>
+                                    <ul class="timer__indicators">
+                                        <li class="timer__item">Project: Project 1</li>
+                                        <li class="timer__item">Task: Task 2</li>
+                                        <li class="timer__item">Sessions 3/4</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn_bg-green timer__start-btn">Start</button>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-                <div class="user__pet-name">
-                    <p class="user__caption">Pet:</p>
-                    <p class="user__text">Sharik</p>
-                </div>
-                <div class="user__time">
-                    <p class="user__caption">Time per day:</p>
-                    <p class="user__text">1 hour 36 minutes</p>
-                </div>
-            </section>
-            <section class="pet">
-                <h3 class="visually-hidden">About pet</h3>
-                <span class="pet__food">10</span>
-                <span class="pet__health"></span>
-                <img src="images/pet.png" alt="pet's avatar" class="pet__avatar">
-                <button type="button" class="btn btn_bg-grey pet__feed-button">Full</button>
-            </section>
-            <button type="button" class="btn btn_bg-yellow account__btn">Log Out</button>
-            <button type="button" class="btn btn_bg-yellow account__btn">Settings</button>
-        </section>
-        <div class="timer-page">
-            <div class="logo timer-page__logo">
-                <img src="images/logo.png" alt="logo of Hexpet" class="logo__image">
+                <section class="task-manager">
+                    <div class="task-manager__container">
+                        <h2 class="visually-hidden">Task manager</h2>
+                        <section class="projects">
+                            <div class="projects__container">
+                                <h3 class="projects__title">Projects</h3>
+                                <ul class="projects__list">
+                                    <li class="projects__item projects__item_selected">
+                                        <button type="button" class="projects__remove-btn">
+                                            <span class="visually-hidden">Remove project</span>
+                                        </button>
+                                        <span class="projects__text">Project 1</span>
+                                        <button type="button" class="projects__done-btn">
+                                            <span class="visually-hidden">Project is done</span>
+                                        </button>
+                                    </li>
+                                    <li class="projects__item">
+                                        <button type="button" class="projects__remove-btn">
+                                            <span class="visually-hidden">Remove project</span>
+                                        </button>
+                                        <span class="projects__text">Project 2</span>
+                                        <button type="button" class="projects__done-btn">
+                                            <span class="visually-hidden">Project is done</span>
+                                        </button>
+                                    </li>
+                                    <li class="projects__item">
+                                        <button type="button" class="projects__remove-btn">
+                                            <span class="visually-hidden">Remove project</span>
+                                        </button>
+                                        <span class="projects__text">Project 3</span>
+                                        <button type="button" class="projects__done-btn">
+                                            <span class="visually-hidden">Project is done</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn_bg-yellow projects__btn">Edit</button>
+                            </div>
+                        </section>
+                        <section class="tasks">
+                            <div class="tasks__container">
+                                <h3 class="tasks__title">Tasks</h3>
+                                <ul class="tasks__list">
+                                    <li class="tasks__item">
+                                        <button type="button" class="tasks__remove-btn">
+                                            <span class="visually-hidden">Remove task</span>
+                                        </button>
+                                        <span class="tasks__text">Task 1</span>
+                                        <button type="button" class="tasks__done-btn">
+                                            <span class="visually-hidden">Task is done</span>
+                                        </button>
+                                    </li>
+                                    <li class="tasks__item tasks__item_selected">
+                                        <button type="button" class="tasks__remove-btn">
+                                            <span class="visually-hidden">Remove project</span>
+                                        </button>
+                                        <span class="tasks__text">Task 2</span>
+                                        <button type="button" class="tasks__done-btn">
+                                            <span class="visually-hidden">Project is done</span>
+                                        </button>
+                                    </li>
+                                    <li class="tasks__item">
+                                        <button type="button" class="tasks__remove-btn">
+                                            <span class="visually-hidden">Remove task</span>
+                                        </button>
+                                        <span class="tasks__text">Task 3</span>
+                                        <button type="button" class="tasks__done-btn">
+                                            <span class="visually-hidden">Task is done</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn_bg-yellow tasks__btn">Edit</button>
+                        </section>
+                    </div>
+                </section>
             </div>
-            <section class="timer">
-                <h3 class="timer__title">Timer</h3>
-                <button type="button" class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_focus">Focus</button>
-                <button type="button" class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_short-break">Short
-                    Break</button>
-                <button type="button" class="btn btn_bg-yellow timer__preset-btn timer__preset-btn_long-break">Long
-                    Break</button>
-                <div class="timer__block">
-                    <div class="timer__time-view">25:00</div>
-                    <ul class="timer__indicators">
-                        <li class="timer__item">Project: Project 1</li>
-                        <li class="timer__item">Task: Task 2</li>
-                        <li class="timer__item">Sessions 3/4</li>
-                    </ul>
-                </div>
-                <button type="button" class="btn btn_bg-green timer__start-btn">Start</button>
-            </section>
-        </div>
-        <section class="task-manager">
-            <h2 class="visually-hidden">Task manager</h2>
-            <section class="projects">
-                <h3 class="projects__title">Projects</h3>
-                <ul class="projects__list">
-                    <li class="projects__item projects__item_selected">
-                        <button type="button" class="projects__remove-btn">
-                            <span class="visually-hidden">Remove project</span>
-                        </button>
-                        <span class="projects__text">Project 1</span>
-                        <button type="button" class="projects__done-btn">
-                            <span class="visually-hidden">Project is done</span>
-                        </button>
-                    </li>
-                    <li class="projects__item">
-                        <button type="button" class="projects__remove-btn">
-                            <span class="visually-hidden">Remove project</span>
-                        </button>
-                        <span class="projects__text">Project 2</span>
-                        <button type="button" class="projects__done-btn">
-                            <span class="visually-hidden">Project is done</span>
-                        </button>
-                    </li>
-                    <li class="projects__item">
-                        <button type="button" class="projects__remove-btn">
-                            <span class="visually-hidden">Remove project</span>
-                        </button>
-                        <span class="projects__text">Project 3</span>
-                        <button type="button" class="projects__done-btn">
-                            <span class="visually-hidden">Project is done</span>
-                        </button>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn_bg-yellow projects__btn">Edit</button>
-            </section>
-            <section class="tasks">
-                <h3 class="tasks__title">Tasks</h3>
-                <ul class="tasks__list">
-                    <li class="tasks__item">
-                        <button type="button" class="tasks__remove-btn">
-                            <span class="visually-hidden">Remove task</span>
-                        </button>
-                        <span class="tasks__text">Task 1</span>
-                        <button type="button" class="tasks__done-btn">
-                            <span class="visually-hidden">Task is done</span>
-                        </button>
-                    </li>
-                    <li class="tasks__item tasks__item_selected">
-                        <button type="button" class="tasks__remove-btn">
-                            <span class="visually-hidden">Remove project</span>
-                        </button>
-                        <span class="tasks__text">Task 2</span>
-                        <button type="button" class="tasks__done-btn">
-                            <span class="visually-hidden">Project is done</span>
-                        </button>
-                    </li>
-                    <li class="tasks__item">
-                        <button type="button" class="tasks__remove-btn">
-                            <span class="visually-hidden">Remove task</span>
-                        </button>
-                        <span class="tasks__text">Task 3</span>
-                        <button type="button" class="tasks__done-btn">
-                            <span class="visually-hidden">Task is done</span>
-                        </button>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn_bg-yellow tasks__btn">Edit</button>
-            </section>
-        </section>
-    </main>
+
+        </main>
+    </div>
+
 </body>
 
 </html>

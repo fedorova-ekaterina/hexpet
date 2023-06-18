@@ -23,3 +23,38 @@
     --cyan:#91fac2;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1860px;
+    padding-top: 56px;
+}
+
+.page-main__container {
+    display: flex;
+    gap: 142px;
+}
+
+.account__container {
+    min-width: 551px;
+}
+
+.timer-page__container {
+    min-width: 482px;
+}
+
+.task-manager__container {
+    min-width: 543px;
+}
+
+.user__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 115px;
+}
+
+.pet__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

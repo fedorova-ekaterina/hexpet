@@ -2,9 +2,22 @@
     background-color: var(--white-2);
     border: 2px solid var(--black);
     border-radius: 40px;
+    padding: 28px 55px;
 }
 
 .pet__food {
     font-size: 33px;
     font-weight: 300;
+}
+
+.pet__feed-button {
+    color: var(--grey-1);
+    font-size: 48px;
+    line-height: 63px;
+    padding: 10px 0;
+}
+
+.pet__img-block {
+    display: flex;
+    justify-content: center;
 }
