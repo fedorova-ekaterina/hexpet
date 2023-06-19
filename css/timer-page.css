@@ -1,0 +1,8 @@
+.timer-page__container {
+    min-width: 25vw;
+}
+
+.timer-page__logo {
+    display: flex;
+    margin-bottom: 85px;
+}

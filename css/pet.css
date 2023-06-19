@@ -5,6 +5,12 @@
     padding: 28px 55px;
 }
 
+.pet__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .pet__food {
     font-size: 33px;
     font-weight: 300;

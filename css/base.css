@@ -38,3 +38,9 @@ ul {
 * {
     box-sizing: border-box;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 100vw;
+    padding-top: 56px;
+}
