@@ -3,6 +3,7 @@
     border: 3px solid var(--black);
     border-radius: 40px;
     padding: 32px 50px;
+    box-sizing: border-box;
 }
 
 .timer__block {

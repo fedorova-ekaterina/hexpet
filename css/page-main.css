@@ -1,4 +1,12 @@
 .page-main__container {
     display: flex;
-    gap: 142px;
+    gap: 7vw;
+}
+
+.page-main__account {
+    min-width: 27vw;
+}
+
+.page-main__task-manager {
+    flex-shrink: 0;
 }

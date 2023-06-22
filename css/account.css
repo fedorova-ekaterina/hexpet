@@ -1,5 +1,7 @@
 .account__container {
-    min-width: 25vw;
+   
+    display: flex;
+    flex-direction: column;
 }
 
 .account__pet {
@@ -9,10 +11,15 @@
 .account__btn {
     font-size: 40px;
     line-height: 53px;
-    min-width: 259px;
+    min-width: 45%;
 }
 
 .account__buttons {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.account {
+    min-width: 27vw;
 }

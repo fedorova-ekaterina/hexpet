@@ -1,5 +1,7 @@
 .timer-page__container {
-    min-width: 25vw;
+    min-width: 23vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .timer-page__logo {
