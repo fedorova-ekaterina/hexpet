@@ -8,18 +8,18 @@
 .pet__container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1vw;
 }
 
 .pet__food {
-    font-size: 33px;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 .pet__feed-button {
     color: var(--grey-1);
-    font-size: 48px;
-    line-height: 63px;
+    font-size: 2rem;
+    line-height: 2.62rem;
     padding: 10px 0;
 }
 

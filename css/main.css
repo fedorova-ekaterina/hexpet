@@ -29,4 +29,54 @@
 .container {
     margin: 0 auto;
     max-width: 100vw;
+    padding-top: 1%;
+}
+
+@media (max-width: 1920px) {
+    .timer-page__button {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+   
+   .account {
+        width: 90vw;
+        display: none;
+    }
+    
+    .page-main__timer {
+        width: 90vw;
+        padding-top: 0;
+    }
+
+    .timer__container {
+        gap: 5vw;
+    }
+
+    .cont {
+        display: flex;
+        justify-content: space-around;
+        align-items: middle;
+    }
+    
+    .page-main__task-manager {
+        width: 90vw;
+        display: none;
+    }
+
+    .logo__image {
+        display: none;
+    }
+
+    .logo {
+        margin-top: -47px;
+    }
+    
+    .timer-page__button {
+        display: block;
+    }
 }

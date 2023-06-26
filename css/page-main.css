@@ -1,12 +1,22 @@
 .page-main__container {
     display: flex;
-    gap: 7vw;
+    gap: 8vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
-.page-main__account {
-    min-width: 27vw;
+/*.page-main__account {
+    min-width: 25vw;
+    border: 1px solid red;
 }
 
 .page-main__task-manager {
-    flex-shrink: 0;
+    min-width: 25vw;
+    border: 1px solid red;
 }
+
+.page-main__timer {
+    min-width: 25vw;
+    border: 1px solid red;
+}
+*/
