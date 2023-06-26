@@ -14,6 +14,19 @@
 .pet__food {
     font-size: 1.4rem;
     font-weight: 300;
+    position: relative;
+}
+
+.pet__food::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 80%;
+    display: block;
+    width: 50px;
+    height: 53px;
+    background-image: url("../images/berry.png");
+    background-repeat: no-repeat;
 }
 
 .pet__feed-button {
@@ -26,4 +39,16 @@
 .pet__img-block {
     display: flex;
     justify-content: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pet__health {
+    background-image: url('../images/progress-icon.png');
+    background-repeat: no-repeat;
+    width: 166px;
+    height: 38px;
 }

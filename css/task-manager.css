@@ -2,3 +2,8 @@
     min-width: 25vw;
     flex: 1 1 25vw;
 }
+
+.task-manager__btn-block {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -19,3 +19,13 @@
     color: var(--grey-1);
     border: none;
 }
+
+.btn_close {
+    display: none;
+    border: none;
+    border-radius: 0;
+    background-color: none;
+    background-image: url('../images/log-out.png');
+    width: 46px;
+    height: 46px;
+}

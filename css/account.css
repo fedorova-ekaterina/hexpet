@@ -18,3 +18,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.account__close-btn {
+    display: none;
+}
