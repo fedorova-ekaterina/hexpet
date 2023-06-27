@@ -8,22 +8,47 @@
 .pet__container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1vw;
 }
 
 .pet__food {
-    font-size: 33px;
+    font-size: 1.4rem;
     font-weight: 300;
+    position: relative;
+}
+
+.pet__food::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 80%;
+    display: block;
+    width: 50px;
+    height: 53px;
+    background-image: url("../images/berry.png");
+    background-repeat: no-repeat;
 }
 
 .pet__feed-button {
     color: var(--grey-1);
-    font-size: 48px;
-    line-height: 63px;
+    font-size: 2rem;
+    line-height: 2.62rem;
     padding: 10px 0;
 }
 
 .pet__img-block {
     display: flex;
     justify-content: center;
+}
+
+.pet__icon-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pet__health {
+    background-image: url('../images/progress-icon.png');
+    background-repeat: no-repeat;
+    width: 166px;
+    height: 38px;
 }

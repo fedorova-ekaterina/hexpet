@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HexPet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -12,9 +13,10 @@
     <div class="container">
         <main class="page-main">
             <div class="page-main__container">
-                <section class="account">
+                <section class="account page-main__account">
                     <div class="account__container">
                         <h2 class="visually-hidden">Account</h2>
+                        <button type="button" class="btn btn_close account__close-btn"></button>
                         <section class="user">
                             <div class="user__container">
                                 <h3 class="visually-hidden">About user</h3>
@@ -35,8 +37,10 @@
                         <section class="pet account__pet">
                             <div class="pet__container">
                                 <h3 class="visually-hidden">About pet</h3>
-                                <span class="pet__food">10</span>
-                                <!--<span class="pet__health"></span>-->
+                                <div class="pet__icon-container">
+                                    <span class="pet__food">10</span>
+                                    <span class="pet__health"></span>
+                                </div>
                                 <div class="pet__img-block">
                                     <img src="images/pet.png" alt="pet's avatar" width="261" height="193"
                                         class="pet__avatar">
@@ -50,11 +54,15 @@
                         </div>
                     </div>
                 </section>
-                <div class="timer-page">
+                <div class="timer-page page-main__timer">
                     <div class="timer-page__container">
-                        <div class="logo timer-page__logo">
-                            <img src="images/logo.png" alt="logo of Hexpet" class="logo__image">
-                            <img src="images/logo-text.png" alt="logo of Hexpet" class="logo__text">
+                        <div class="timer-page__btn-block">
+                            <button type="button" class="timer-page__button timer-page__button_profile"></button>
+                            <div class="logo timer-page__logo">
+                                <img src="images/logo.png" alt="logo of Hexpet" class="logo__image">
+                                <img src="images/logo-text.png" alt="logo of Hexpet" class="logo__text">
+                            </div>
+                            <button type="button" class="timer-page__button timer-page__button_menu"></button>
                         </div>
                         <section class="timer">
                             <div class="timer__container">
@@ -78,13 +86,17 @@
                                     </ul>
                                 </div>
                                 <button type="button" class="btn btn_bg-green timer__start-btn">Start</button>
+                                <button type="button" class="btn btn_bg-red timer__stop-btn">Stop</button>
                             </div>
                         </section>
                     </div>
                 </div>
-                <section class="task-manager">
+                <section class="task-manager page-main__task-manager">
                     <div class="task-manager__container">
                         <h2 class="visually-hidden">Task manager</h2>
+                        <div class="task-manager__btn-block">
+                            <button type="button" class="btn btn_close task-manager__close-btn"></button>
+                        </div>
                         <section class="projects">
                             <div class="projects__container">
                                 <h3 class="projects__title">Projects</h3>
@@ -153,6 +165,7 @@
                                     </li>
                                 </ul>
                                 <button type="button" class="btn btn_bg-yellow tasks__btn">Edit</button>
+                            </div>
                         </section>
                     </div>
                 </section>
