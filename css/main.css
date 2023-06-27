@@ -102,6 +102,14 @@
         justify-content: space-around;
         align-items: middle;
     }
+
+    .timer__stop-btn {
+        display: block;
+    }
+
+    .timer__start-btn {
+        display: none;
+    }
     
     .page-main__task-manager {
         width: 90vw;
