@@ -41,7 +41,7 @@
     justify-content: center;
 }
 
-.cont {
+.pet__icon-container{
     display: flex;
     justify-content: space-between;
 }
