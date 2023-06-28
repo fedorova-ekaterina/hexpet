@@ -82,14 +82,6 @@
         font-size: 14px;
     }
    
-    .non-visible {
-        display: none;
-      }
-      
-    .visible {
-        display: block;
-      }
-   
     .page-main__account {
         width: 90vw;
         display: none;
@@ -141,6 +133,14 @@
         padding-left: 0;
         background-position: 11% 0;
     }
+
+    .non-visible {
+        display: none;
+      }
+      
+    .visible {
+        display: block;
+      }
 }
 
 @media (max-width: 500px) {
