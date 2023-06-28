@@ -133,14 +133,6 @@
         padding-left: 0;
         background-position: 11% 0;
     }
-
-    .non-visible {
-        display: none;
-      }
-      
-    .visible {
-        display: block;
-      }
 }
 
 @media (max-width: 500px) {
