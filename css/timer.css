@@ -59,14 +59,14 @@
 }
 
 .timer__start-btn,
-.timer__stop-btn {
+.timer__pause-btn {
     font-size: 1.7rem;
     line-height: 53px;
     text-transform: uppercase;
     border: 2px solid var(--black);
 }
 
-.timer__stop-btn {
+.timer__pause-btn {
     display: none;
     background-color: var(--red);
 }

@@ -1,7 +1,7 @@
 // Получаем необходимые элементы
 const timeView = document.querySelector('.timer__time-view');
 const startBtn = document.querySelector('.timer__start-btn');
-const stopBtn = document.querySelector('.timer__stop-btn');
+const pauseBtn = document.querySelector('.timer__pause-btn');
 const shortBreakBtn = document.querySelector('.timer__preset-btn_short-break');
 const longBreakBtn = document.querySelector('.timer__preset-btn_long-break');
 const focusBtn = document.querySelector('.timer__preset-btn_focus');
@@ -61,13 +61,13 @@ function setFocusTime() {
 startBtn.addEventListener('click', () => {
   startTimer();
   startBtn.style.display = 'none';
-  stopBtn.style.display = 'block';
+  pauseBtn.style.display = 'block';
 });
 
 // Обработчик клика на кнопку "Stop"
-stopBtn.addEventListener('click', () => {
+pauseBtn.addEventListener('click', () => {
   stopTimer();
-  stopBtn.style.display = 'none';
+  pauseBtn.style.display = 'none';
   startBtn.style.display = 'block';
 });
 
