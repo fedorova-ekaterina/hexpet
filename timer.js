@@ -1,7 +1,7 @@
 // Получаем необходимые элементы
 const timeView = document.querySelector('.timer__time-view');
 const startBtn = document.querySelector('.timer__start-btn');
-const stopBtn = document.querySelector('.timer__stop-btn');
+const pauseBtn = document.querySelector('.timer__pause-btn');
 const shortBreakBtn = document.querySelector('.timer__preset-btn_short-break');
 const longBreakBtn = document.querySelector('.timer__preset-btn_long-break');
 const focusBtn = document.querySelector('.timer__preset-btn_focus');
@@ -60,11 +60,15 @@ function setFocusTime() {
 // Обработчик клика на кнопку "Start"
 startBtn.addEventListener('click', () => {
   startTimer();
+  startBtn.style.display = 'none';
+  pauseBtn.style.display = 'block';
 });
 
 // Обработчик клика на кнопку "Stop"
-stopBtn.addEventListener('click', () => {
+pauseBtn.addEventListener('click', () => {
   stopTimer();
+  pauseBtn.style.display = 'none';
+  startBtn.style.display = 'block';
 });
 
 // Обработчик клика на кнопку "Short Break"
@@ -80,18 +84,4 @@ longBreakBtn.addEventListener('click', () => {
 // Обработчик клика на кнопку "Focus"
 focusBtn.addEventListener('click', () => {
   setFocusTime();
-});
-
-// Добавляем обработчик события при клике на кнопку "Start"
-startBtn.addEventListener('click', function() {
-  // Заменяем кнопку start на кнопку "Stop"
-  startBtn.style.display = 'none';
-  stopBtn.style.display = 'block';
-});
-
-// Добавляем обработчик события при клике на кнопку "Stop"
-stopBtn.addEventListener('click', function() {
-  // Заменяем кнопку stop на кнопку "Start"
-  stopBtn.style.display = 'none';
-  startBtn.style.display = 'block';
 });
